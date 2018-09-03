@@ -1,0 +1,2 @@
+# automain
+automain
