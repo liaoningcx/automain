@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="code-micmsg:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="code-micmsg.war">
+      <element id="artifact" artifact-name="code-micmsg:war exploded" />
+    </root>
+  </artifact>
+</component>
