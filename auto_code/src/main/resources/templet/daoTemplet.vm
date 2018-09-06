@@ -1,12 +1,12 @@
-package $!{packageBasePath}.dao;
+package $!{packagePath}.dao;
 
-import $!{packageBasePath}.domain.$!{domainClassNameEN};
-import $!{packageBasePath}.dao.$!{domainClassNameEN}Dao;
+import $!{packagePath}.domain.$!{tableClassNameFirstCap};
+import $!{packagePath}.dao.$!{tableClassNameFirstCap}Dao;
 
 //功能实现类
 #if(${extendsClassList})
     #foreach(${extendsClass} in ${extendsClassList})
-    import ${extendsClass.packageBasePath}.${extendsClass.className};
+    import ${extendsClass.packagePath}.${extendsClass.className};
     #end
 #end
 
@@ -14,46 +14,46 @@ import java.util.List;
 
 
 /**
-* $!{tableComment}Dao层接口类
-* User: $!{author}
-* DateTime: $!{makeDateTime}
+* $!{tableAnnontation}Dao层接口类
+* User: $!{authorName}
+* DateTime: $!{projMakeTime}
 **/
-public interface $!{domainClassNameEN}Dao {
+public interface $!{tableClassNameFirstCap}Dao {
     /**
-    * 添加$!{tableComment}信息
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+    * 添加$!{tableAnnontation}信息
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
     */
-    public void insert($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception;
+    public void insert($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception;
 
     /**
-    * 通过主键修改$!{tableComment}
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+    * 通过主键修改$!{tableAnnontation}
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
     */
-    public void updateByID($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception;
+    public void updateByID($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception;
 
     /**
-    * 根据主键删除$!{tableComment}
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+    * 根据主键删除$!{tableAnnontation}
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
     */
-    public void deleteByID($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception;
+    public void deleteByID($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception;
 
     /**
-    * 根据主键批量删除$!{tableComment}
-    * @param $!{domainPropertyNameEN}List $!{tableComment}Domain集合
+    * 根据主键批量删除$!{tableAnnontation}
+    * @param $!{tableClassName}List $!{tableAnnontation}Domain集合
     */
-    public void deleteBatchByIDList(List<$!{domainClassNameEN}> $!{domainPropertyNameEN}List) throws Exception;
+    public void deleteBatchByIDList(List<$!{tableClassNameFirstCap}> $!{tableClassName}List) throws Exception;
 
     /**
-    * 查询$!{tableComment}列表
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
-    * @return $!{tableComment}列表
+    * 查询$!{tableAnnontation}列表
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
+    * @return $!{tableAnnontation}列表
     */
-    public List<$!{domainClassNameEN}> select( $!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception;
+    public List<$!{tableClassNameFirstCap}> select( $!{tableClassNameFirstCap} $!{tableClassName}) throws Exception;
 
     /**
-    * 查询$!{tableComment}列表
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
-    * @return $!{tableComment}列表个数
+    * 查询$!{tableAnnontation}列表
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
+    * @return $!{tableAnnontation}列表个数
     */
-    public int selectCount($!{domainClassNameEN} query) throws Exception;
+    public int selectCount($!{tableClassNameFirstCap} query) throws Exception;
 }

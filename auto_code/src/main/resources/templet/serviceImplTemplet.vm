@@ -1,15 +1,15 @@
-package $!{packageBasePath}.service.impl;
+package $!{packagePath}.service.impl;
 
 import com.auto.common.Page;
 
-import $!{packageBasePath}.domain.$!{domainClassNameEN};
-import $!{packageBasePath}.service.$!{domainClassNameEN}Service;
-import $!{packageBasePath}.dao.$!{domainClassNameEN}Dao;
+import $!{packagePath}.domain.$!{tableClassNameFirstCap};
+import $!{packagePath}.service.$!{tableClassNameFirstCap}Service;
+import $!{packagePath}.dao.$!{tableClassNameFirstCap}Dao;
 
 //功能实现类
 #if(${extendsClassList})
     #foreach(${extendsClass} in ${extendsClassList})
-import ${extendsClass.packageBasePath}.${extendsClass.className};
+import ${extendsClass.packagePath}.${extendsClass.className};
     #end
 #end
 import org.springframework.stereotype.Service;
@@ -18,76 +18,76 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 /**
- * $!{tableComment}Service层实现类
- * User: $!{author}
- * DateTime: $!{makeDateTime}
+ * $!{tableAnnontation}Service层实现类
+ * User: $!{authorName}
+ * DateTime: $!{projMakeTime}
  **/
 @Service
-public class $!{domainClassNameEN}ServiceImpl implements $!{domainClassNameEN}Service {
+public class $!{tableClassNameFirstCap}ServiceImpl implements $!{tableClassNameFirstCap}Service {
 
     @Autowired
-    private $!{domainClassNameEN}Dao $!{domainPropertyNameEN}Dao;
+    private $!{tableClassNameFirstCap}Dao $!{tableClassName}Dao;
 
     /**
-     * 新增$!{tableComment}
-     * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+     * 新增$!{tableAnnontation}
+     * @param $!{tableClassName} $!{tableAnnontation}Domain
      */
     @Override
-    public void insert($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception{
-        $!{domainPropertyNameEN}Dao.insert($!{domainPropertyNameEN});
+    public void insert($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception{
+        $!{tableClassName}Dao.insert($!{tableClassName});
     }
 
     /**
-     * 修改$!{tableComment}
-     * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+     * 修改$!{tableAnnontation}
+     * @param $!{tableClassName} $!{tableAnnontation}Domain
      */
     @Override
-    public void updateByID($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception{
-        $!{domainPropertyNameEN}Dao.updateByID($!{domainPropertyNameEN});
+    public void updateByID($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception{
+        $!{tableClassName}Dao.updateByID($!{tableClassName});
     }
 
     /**
-     * 根据主键删除$!{tableComment}
-     * @param $!{domainPropertyNameEN} $!{tableComment}Domain
+     * 根据主键删除$!{tableAnnontation}
+     * @param $!{tableClassName} $!{tableAnnontation}Domain
      */
     @Override
-    public void deleteByID($!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception{
-        $!{domainPropertyNameEN}Dao.deleteByID($!{domainPropertyNameEN});
+    public void deleteByID($!{tableClassNameFirstCap} $!{tableClassName}) throws Exception{
+        $!{tableClassName}Dao.deleteByID($!{tableClassName});
     }
 
     /**
-     * 根据主键批量删除$!{tableComment}
-     * @param $!{domainPropertyNameEN}List $!{tableComment}Domain集合
+     * 根据主键批量删除$!{tableAnnontation}
+     * @param $!{tableClassName}List $!{tableAnnontation}Domain集合
      */
     @Override
-    public void deleteBatchByIDList(List<$!{domainClassNameEN}> $!{domainPropertyNameEN}List) throws Exception{
-        $!{domainPropertyNameEN}Dao.deleteBatchByIDList($!{domainPropertyNameEN}List);
+    public void deleteBatchByIDList(List<$!{tableClassNameFirstCap}> $!{tableClassName}List) throws Exception{
+        $!{tableClassName}Dao.deleteBatchByIDList($!{tableClassName}List);
     }
 
     /**
-     * 查询$!{tableComment}列表
-     * @param $!{domainPropertyNameEN} $!{tableComment}Domain
-     * @return $!{tableComment}列表
+     * 查询$!{tableAnnontation}列表
+     * @param $!{tableClassName} $!{tableAnnontation}Domain
+     * @return $!{tableAnnontation}列表
      */
     @Override
-    public List<$!{domainClassNameEN}> select( $!{domainClassNameEN} $!{domainPropertyNameEN}) throws Exception{
-        return $!{domainPropertyNameEN}Dao.select($!{domainPropertyNameEN});
+    public List<$!{tableClassNameFirstCap}> select( $!{tableClassNameFirstCap} $!{tableClassName}) throws Exception{
+        return $!{tableClassName}Dao.select($!{tableClassName});
     }
 
     /**
-    * 分页查询$!{tableComment}列表
-    * @param $!{domainPropertyNameEN} $!{tableComment}Domain
-    * @return $!{tableComment}列表
+    * 分页查询$!{tableAnnontation}列表
+    * @param $!{tableClassName} $!{tableAnnontation}Domain
+    * @return $!{tableAnnontation}列表
     */
     @Override
-    public Page<$!{domainClassNameEN}> find$!{domainClassNameEN}Page($!{domainClassNameEN} query) throws Exception{
-        Page<$!{domainClassNameEN}> $!{domainPropertyNameEN}Page = new Page<$!{domainClassNameEN}>();
-        int count = $!{domainPropertyNameEN}Dao.selectCount(query);
+    public Page<$!{tableClassNameFirstCap}> find$!{tableClassNameFirstCap}Page($!{tableClassNameFirstCap} query) throws Exception{
+        Page<$!{tableClassNameFirstCap}> $!{tableClassName}Page = new Page<$!{tableClassNameFirstCap}>();
+        int count = $!{tableClassName}Dao.selectCount(query);
         if(count>0){
-            $!{domainPropertyNameEN}Page.setTotalRow(count);
-            $!{domainPropertyNameEN}Page.refresh();
-            $!{domainPropertyNameEN}Page.setResult($!{domainPropertyNameEN}Dao.select(query));
-            return $!{domainPropertyNameEN}Page;
+            $!{tableClassName}Page.setTotalRow(count);
+            $!{tableClassName}Page.refresh();
+            $!{tableClassName}Page.setResult($!{tableClassName}Dao.select(query));
+            return $!{tableClassName}Page;
         }else {
             return null;
         }

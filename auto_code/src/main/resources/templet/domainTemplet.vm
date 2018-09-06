@@ -1,15 +1,15 @@
-package $!{packageBasePath}.domain;
+package $!{packagePath}.domain;
 
 import java.util.Date;
 import java.math.BigDecimal;
 import java.io.Serializable;
 
 /**
- * $!{tableComment}Domain
- * User: $!{author}
- * Date: $!{makeDateTime}
+ * $!{tableAnnontation}Domain
+ * User: $!{authorName}
+ * Date: $!{projMakeTime}
  **/
-public class $!{domainClassNameEN} implements Serializable {
+public class $!{tableClassNameFirstCap} implements Serializable {
 
     private static final long serialVersionUID = -$!{radomMathInt}L;
 

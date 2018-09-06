@@ -1,10 +1,10 @@
-package $!{packageBasePath}.controller;
+package $!{packagePath}.controller;
 
 import com.auto.common.CommonResponse;
 import com.auto.common.Page;
 
-import $!{packageBasePath}.service.$!{domainClassNameEN}Service;
-import $!{packageBasePath}.domain. $!{domainClassNameEN};
+import $!{packagePath}.service.$!{tableClassNameFirstCap}Service;
+import $!{packagePath}.domain. $!{tableClassNameFirstCap};
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,16 +18,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
- * $!{tableComment}的Controller实现
- * User: $!{author}
- * DateTime: $!{makeDateTime}
+ * $!{tableAnnontation}的Controller实现
+ * User: $!{authorName}
+ * DateTime: $!{projMakeTime}
  **/
 @Controller
-@RequestMapping("/$!{domainPropertyNameEN}")
-public class $!{domainClassNameEN}Controller {
+@RequestMapping("/$!{tableClassName}")
+public class $!{tableClassNameFirstCap}Controller {
 
     @Autowired
-    private $!{domainClassNameEN}Service $!{domainPropertyNameEN}Service;
+    private $!{tableClassNameFirstCap}Service $!{tableClassName}Service;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String main(Model model, HttpServletResponse response) {
@@ -35,25 +35,25 @@ public class $!{domainClassNameEN}Controller {
         return "index";
     }
 
-    @RequestMapping(value = "/$!{domainPropertyNameEN}View", method = RequestMethod.GET)
-    public String $!{domainPropertyNameEN}View(Model model, HttpServletResponse response) {
-        return "$!{domainPropertyNameEN}View";
+    @RequestMapping(value = "/$!{tableClassName}View", method = RequestMethod.GET)
+    public String $!{tableClassName}View(Model model, HttpServletResponse response) {
+        return "$!{tableClassName}View";
     }
 
     /**
-    * 查询所有$!{tableComment}
+    * 查询所有$!{tableAnnontation}
     * @param model
     * @param response
-    * @return $!{tableComment}结果
+    * @return $!{tableAnnontation}结果
     */
     @ResponseBody
-    @RequestMapping(value = "/query$!{domainClassNameEN}", method = {RequestMethod.GET,RequestMethod.POST})
-    public CommonResponse query$!{domainClassNameEN}(Model model, HttpServletResponse response) {
-        CommonResponse<List<$!{domainClassNameEN}>> commonResponse = new CommonResponse<List<$!{domainClassNameEN}>>();
+    @RequestMapping(value = "/query$!{tableClassNameFirstCap}", method = {RequestMethod.GET,RequestMethod.POST})
+    public CommonResponse query$!{tableClassNameFirstCap}(Model model, HttpServletResponse response) {
+        CommonResponse<List<$!{tableClassNameFirstCap}>> commonResponse = new CommonResponse<List<$!{tableClassNameFirstCap}>>();
         try {
-            $!{domainClassNameEN} query = new $!{domainClassNameEN}();
-            List<$!{domainClassNameEN}> $!{domainPropertyNameEN}List = $!{domainPropertyNameEN}Service.select(query);
-            commonResponse.setData($!{domainPropertyNameEN}List);
+            $!{tableClassNameFirstCap} query = new $!{tableClassNameFirstCap}();
+            List<$!{tableClassNameFirstCap}> $!{tableClassName}List = $!{tableClassName}Service.select(query);
+            commonResponse.setData($!{tableClassName}List);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -61,19 +61,19 @@ public class $!{domainClassNameEN}Controller {
     }
 
     /**
-    * 分页查询$!{tableComment}
+    * 分页查询$!{tableAnnontation}
     * @param model
     * @param response
-    * @return $!{tableComment}结果
+    * @return $!{tableAnnontation}结果
     */
     @ResponseBody
-    @RequestMapping(value = "/find$!{domainClassNameEN}", method = {RequestMethod.GET,RequestMethod.POST})
-    public CommonResponse find$!{domainClassNameEN}(Model model, HttpServletResponse response) {
-        CommonResponse<Page<$!{domainClassNameEN}>> commonResponse = new CommonResponse<Page<$!{domainClassNameEN}>>();
+    @RequestMapping(value = "/find$!{tableClassNameFirstCap}", method = {RequestMethod.GET,RequestMethod.POST})
+    public CommonResponse find$!{tableClassNameFirstCap}(Model model, HttpServletResponse response) {
+        CommonResponse<Page<$!{tableClassNameFirstCap}>> commonResponse = new CommonResponse<Page<$!{tableClassNameFirstCap}>>();
         try {
-            $!{domainClassNameEN} query = new $!{domainClassNameEN}();
-            Page<$!{domainClassNameEN}> $!{domainPropertyNameEN}Page = $!{domainPropertyNameEN}Service.find$!{domainClassNameEN}Page(query);
-            commonResponse.setData($!{domainPropertyNameEN}Page);
+            $!{tableClassNameFirstCap} query = new $!{tableClassNameFirstCap}();
+            Page<$!{tableClassNameFirstCap}> $!{tableClassName}Page = $!{tableClassName}Service.find$!{tableClassNameFirstCap}Page(query);
+            commonResponse.setData($!{tableClassName}Page);
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -81,18 +81,18 @@ public class $!{domainClassNameEN}Controller {
     }
 
     /**
-    * 删除$!{tableComment}
+    * 删除$!{tableAnnontation}
     * @param request
     * @return
     */
     @ResponseBody
-    @RequestMapping(value = "/del$!{domainClassNameEN}", method = {RequestMethod.GET,RequestMethod.POST})
-    public CommonResponse del$!{domainClassNameEN}(HttpServletRequest request) {
-        CommonResponse<$!{domainClassNameEN}> commonResponse = new CommonResponse<$!{domainClassNameEN}>();
+    @RequestMapping(value = "/del$!{tableClassNameFirstCap}", method = {RequestMethod.GET,RequestMethod.POST})
+    public CommonResponse del$!{tableClassNameFirstCap}(HttpServletRequest request) {
+        CommonResponse<$!{tableClassNameFirstCap}> commonResponse = new CommonResponse<$!{tableClassNameFirstCap}>();
         try {
-            $!{domainClassNameEN} $!{domainPropertyNameEN} = new $!{domainClassNameEN}();
-            $!{domainPropertyNameEN}.set$!{pkColumn.columnClassNameFirstCap}(Integer.valueOf(request.getParameter("$!{pkColumn.columnClassName}")));
-            $!{domainPropertyNameEN}Service.deleteByID($!{domainPropertyNameEN});
+            $!{tableClassNameFirstCap} $!{tableClassName} = new $!{tableClassNameFirstCap}();
+            $!{tableClassName}.set$!{pkColumn.columnClassNameFirstCap}(Integer.valueOf(request.getParameter("$!{pkColumn.columnClassName}")));
+            $!{tableClassName}Service.deleteByID($!{tableClassName});
             commonResponse.setCode(CommonResponse.CODE_OK);
             commonResponse.setMessage(CommonResponse.MESSAGE_OK);
         }catch (Exception ex){
@@ -104,31 +104,31 @@ public class $!{domainClassNameEN}Controller {
     }
 
     /**
-    * 显示添加$!{tableComment}页面
+    * 显示添加$!{tableAnnontation}页面
     * @param model
     * @param response
     * @return
     */
-    @RequestMapping(value = "/showIns$!{domainClassNameEN}View", method = {RequestMethod.GET,RequestMethod.POST})
-    public String showIns$!{domainClassNameEN}View(Model model, HttpServletResponse response) {
-        return "$!{domainPropertyNameEN}ViewIns";
+    @RequestMapping(value = "/showIns$!{tableClassNameFirstCap}View", method = {RequestMethod.GET,RequestMethod.POST})
+    public String showIns$!{tableClassNameFirstCap}View(Model model, HttpServletResponse response) {
+        return "$!{tableClassName}ViewIns";
     }
 
     /**
-    * 添加$!{tableComment}
+    * 添加$!{tableAnnontation}
     * @param request
     * @return
     */
     @ResponseBody
-    @RequestMapping(value = "/insert$!{domainClassNameEN}", method = {RequestMethod.GET,RequestMethod.POST})
-    public CommonResponse insert$!{domainClassNameEN}(HttpServletRequest request) {
+    @RequestMapping(value = "/insert$!{tableClassNameFirstCap}", method = {RequestMethod.GET,RequestMethod.POST})
+    public CommonResponse insert$!{tableClassNameFirstCap}(HttpServletRequest request) {
         CommonResponse commonResponse = new CommonResponse();
-        $!{domainClassNameEN} $!{domainPropertyNameEN} = new $!{domainClassNameEN}();
+        $!{tableClassNameFirstCap} $!{tableClassName} = new $!{tableClassNameFirstCap}();
         try {
 #foreach(${basicColumn} in ${basicColumnList})
-            $!{domainPropertyNameEN}.set$!{basicColumn.columnClassNameFirstCap}(request.getParameter("$!{domainPropertyNameEN}[$!{basicColumn.columnClassName}]"));
+            $!{tableClassName}.set$!{basicColumn.columnClassNameFirstCap}(request.getParameter("$!{tableClassName}[$!{basicColumn.columnClassName}]"));
 #end
-            $!{domainPropertyNameEN}Service.insert($!{domainPropertyNameEN});
+            $!{tableClassName}Service.insert($!{tableClassName});
             commonResponse.setCode(CommonResponse.CODE_OK);
             commonResponse.setMessage(CommonResponse.MESSAGE_OK);
         } catch (Exception e) {
@@ -140,44 +140,44 @@ public class $!{domainClassNameEN}Controller {
     }
 
     /**
-    * 显示修改$!{tableComment}页面
+    * 显示修改$!{tableAnnontation}页面
     * @param model
     * @param response
     * @param id
     * @return
     */
-    @RequestMapping(value = "/showMod$!{domainClassNameEN}View", method = {RequestMethod.GET,RequestMethod.POST})
-    public String mod$!{domainClassNameEN}(Model model, HttpServletResponse response,Integer id) {
-        $!{domainClassNameEN} $!{domainPropertyNameEN} = new $!{domainClassNameEN}();
-        $!{domainPropertyNameEN}.set$!{pkColumn.columnClassNameFirstCap}(id);
+    @RequestMapping(value = "/showMod$!{tableClassNameFirstCap}View", method = {RequestMethod.GET,RequestMethod.POST})
+    public String mod$!{tableClassNameFirstCap}(Model model, HttpServletResponse response,Integer id) {
+        $!{tableClassNameFirstCap} $!{tableClassName} = new $!{tableClassNameFirstCap}();
+        $!{tableClassName}.set$!{pkColumn.columnClassNameFirstCap}(id);
         try {
-            List<$!{domainClassNameEN}> $!{domainPropertyNameEN}List = $!{domainPropertyNameEN}Service.select($!{domainPropertyNameEN});
-            if($!{domainPropertyNameEN}List!=null&&$!{domainPropertyNameEN}List.size()>0){
-                $!{domainPropertyNameEN} = $!{domainPropertyNameEN}List.get(0);
+            List<$!{tableClassNameFirstCap}> $!{tableClassName}List = $!{tableClassName}Service.select($!{tableClassName});
+            if($!{tableClassName}List!=null&&$!{tableClassName}List.size()>0){
+                $!{tableClassName} = $!{tableClassName}List.get(0);
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        model.addAttribute("$!{domainPropertyNameEN}",$!{domainPropertyNameEN});
-        return "$!{domainPropertyNameEN}ViewMod";
+        model.addAttribute("$!{tableClassName}",$!{tableClassName});
+        return "$!{tableClassName}ViewMod";
     }
 
     /**
-    * 修改$!{tableComment}
+    * 修改$!{tableAnnontation}
     * @param request
     * @return
     */
     @ResponseBody
-    @RequestMapping(value = "/modify$!{domainClassNameEN}", method = {RequestMethod.GET,RequestMethod.POST})
-    public CommonResponse modify$!{domainClassNameEN}(HttpServletRequest request) {
+    @RequestMapping(value = "/modify$!{tableClassNameFirstCap}", method = {RequestMethod.GET,RequestMethod.POST})
+    public CommonResponse modify$!{tableClassNameFirstCap}(HttpServletRequest request) {
         CommonResponse commonResponse = new CommonResponse();
-        $!{domainClassNameEN} $!{domainPropertyNameEN} = new $!{domainClassNameEN}();
+        $!{tableClassNameFirstCap} $!{tableClassName} = new $!{tableClassNameFirstCap}();
         try {
-            $!{domainPropertyNameEN}.set$!{pkColumn.columnClassNameFirstCap}(Integer.valueOf(request.getParameter("$!{pkColumn.columnClassName}")));
+            $!{tableClassName}.set$!{pkColumn.columnClassNameFirstCap}(Integer.valueOf(request.getParameter("$!{pkColumn.columnClassName}")));
         #foreach(${basicColumn} in ${basicColumnList})
-            $!{domainPropertyNameEN}.set$!{basicColumn.columnClassNameFirstCap}(request.getParameter("$!{domainPropertyNameEN}[$!{basicColumn.columnClassName}]"));
+            $!{tableClassName}.set$!{basicColumn.columnClassNameFirstCap}(request.getParameter("$!{tableClassName}[$!{basicColumn.columnClassName}]"));
         #end
-            $!{domainPropertyNameEN}Service.updateByID($!{domainPropertyNameEN});
+            $!{tableClassName}Service.updateByID($!{tableClassName});
             commonResponse.setCode(CommonResponse.CODE_OK);
             commonResponse.setMessage(CommonResponse.MESSAGE_OK);
         } catch (Exception e) {

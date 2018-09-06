@@ -1,6 +1,5 @@
 package com.mic.generator.bussiness.autocode.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,18 +11,16 @@ public class AutoTable {
     private Integer radomInt;//domain的serlize随机数
 
     private String tableSqlName;//表名字。eg：lgd_student
-    private String tableComment;//表的注释；eg：理工大的学生表
+    private String tableClassNameFirstCap;//domain的类名 -- 首字母大写 波浪式命名；eg:LgdStudent
+    private String tableClassName;//domain用来做属性 -- 首字母小写 波浪式命名  eg:lgdStudent
+    private String tableAnnontation;//表的注释；eg：理工大的学生表
 
-    private String domainClassNameEN;//domain的类名 -- 首字母大写 波浪式命名；eg:LgdStudent
-    private String domainPropertyNameEN;//domain用来做属性 -- 首字母小写 波浪式命名  eg:lgdStudent
-
-    private String authorName;//作者
     private String extendsClassList;//扩展功能类的信息
 
     //基本框架 -- domain 用到column ;
-    private List<ColumnAuto> basicColumnList;//表中基础属性
-    ColumnAuto pkcolumn = new ColumnAuto();//主键
-    ColumnAuto deleteFlagColumn = new ColumnAuto();//逻辑删除标识
+    private List<AutoColumn> basicColumnList;//表中基础属性
+    AutoColumn pkcolumn;//主键
+    AutoColumn deleteFlagColumn;//逻辑删除标识
 
     public String getTableName() {
         return tableSqlName;
@@ -33,36 +30,37 @@ public class AutoTable {
         this.tableSqlName = tableSqlName;
     }
 
-    public String getTableComment() {
-        return tableComment;
+    public String getTableSqlName() {
+        return tableSqlName;
     }
 
-    public void setTableComment(String tableComment) {
-        this.tableComment = tableComment;
+    public void setTableSqlName(String tableSqlName) {
+        this.tableSqlName = tableSqlName;
     }
 
-    public String getDomainClassNameEN() {
-        return domainClassNameEN;
+    public String getTableAnnontation() {
+        return tableAnnontation;
     }
 
-    public void setDomainClassNameEN(String domainClassNameEN) {
-        this.domainClassNameEN = domainClassNameEN;
+    public void setTableAnnontation(String tableAnnontation) {
+        this.tableAnnontation = tableAnnontation;
     }
 
-    public String getDomainPropertyNameEN() {
-        return domainPropertyNameEN;
+
+    public String getTableClassNameFirstCap() {
+        return tableClassNameFirstCap;
     }
 
-    public void setDomainPropertyNameEN(String domainPropertyNameEN) {
-        this.domainPropertyNameEN = domainPropertyNameEN;
+    public void setTableClassNameFirstCap(String tableClassNameFirstCap) {
+        this.tableClassNameFirstCap = tableClassNameFirstCap;
     }
 
-    public String getAuthor() {
-        return authorName;
+    public String getTableClassName() {
+        return tableClassName;
     }
 
-    public void setAuthor(String author) {
-        this.authorName = author;
+    public void setTableClassName(String tableClassName) {
+        this.tableClassName = tableClassName;
     }
 
     public String getExtendsClassList() {
@@ -73,27 +71,27 @@ public class AutoTable {
         this.extendsClassList = extendsClassList;
     }
 
-    public List<ColumnAuto> getBasicColumnList() {
+    public List<AutoColumn> getBasicColumnList() {
         return basicColumnList;
     }
 
-    public void setBasicColumnList(List<ColumnAuto> basicColumnList) {
+    public void setBasicColumnList(List<AutoColumn> basicColumnList) {
         this.basicColumnList = basicColumnList;
     }
 
-    public ColumnAuto getPkcolumn() {
+    public AutoColumn getPkcolumn() {
         return pkcolumn;
     }
 
-    public void setPkcolumn(ColumnAuto pkcolumn) {
+    public void setPkcolumn(AutoColumn pkcolumn) {
         this.pkcolumn = pkcolumn;
     }
 
-    public ColumnAuto getDeleteFlagColumn() {
+    public AutoColumn getDeleteFlagColumn() {
         return deleteFlagColumn;
     }
 
-    public void setDeleteFlagColumn(ColumnAuto deleteFlagColumn) {
+    public void setDeleteFlagColumn(AutoColumn deleteFlagColumn) {
         this.deleteFlagColumn = deleteFlagColumn;
     }
 
