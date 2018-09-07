@@ -59,6 +59,12 @@ public class MicMsg {
             //框架固定文件--如js等
             FrameAutoUtil.AutoFrameMake(frameBasePath,autoProjPath);
 
+            AutoDBDomain autoDBDomain = JsonUtil.fromJsonByGoogle(value, new TypeToken<AutoDBDomain>() {
+            });
+            for (AutoTable eachAutoTable : autoDBDomain.getTableList()){
+
+            }
+
             //获取值
             HashMap<String,Object> autoBeanVal = _getAutoCodeName(value);
             autoBeanVal.put("PROJECT_NAME","autoProjectVer1.0");//项目名称
@@ -159,63 +165,55 @@ public class MicMsg {
     }
 
     public static void main(String args [] ){
-
-//        try {
-//            URI uri =  new URI("http://erp.jd.com");
-//            Desktop dp = Desktop.getDesktop();
-//            dp.browse(uri);
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
         try {
             AutoDBDomain dbDomain = new AutoDBDomain();
-            AutoTable autoTable = new AutoTable();
             dbDomain.setAuthorName("大胖子");
-            List<AutoColumn> basicColumns = new ArrayList<AutoColumn>();
-            for (int i=0;i<5;i++){
-                AutoColumn nomalAuto = new AutoColumn();
-                nomalAuto.setColumnAnnotation("数据库的备注你看看" + i);
-                nomalAuto.setColumnClassName("taTestNBA" + i);
-                nomalAuto.setColumnClassNameFirstCap("TaTestNBA" + i);
-                nomalAuto.setColumnClassDataType("String");
-                nomalAuto.setColumnSqlDataTypeAllCap("VARCHAR");
-                nomalAuto.setColumnSQLName("ta_Test_NBA"+i);
-                nomalAuto.setColumnSqlDataType("varchar");
-                basicColumns.add(nomalAuto);
-            }
-            autoTable.setBasicColumnList(basicColumns);
-
-            AutoColumn delAuto = new AutoColumn();
-            delAuto.setColumnAnnotation("逻辑删除标识");
-            delAuto.setColumnClassName("yn");
-            delAuto.setColumnClassNameFirstCap("Yn");
-            delAuto.setColumnClassDataType("Integer");
-            delAuto.setColumnSqlDataTypeAllCap("INTEGER");
-            delAuto.setColumnSQLName("yn");
-            delAuto.setColumnSqlDataType("int");
-            autoTable.setDeleteFlagColumn(delAuto);
-
-            autoTable.setTableAnnontation("第三次测试表");
-            autoTable.setTableClassNameFirstCap("ThirdTest");
-            autoTable.setTableClassName("thirdTest");
-
-            autoTable.setExtendsClassList(null);
-            AutoColumn pkAuto = new AutoColumn();
-            pkAuto.setColumnAnnotation("第三次主键注释");
-            pkAuto.setColumnClassName("thirdid");
-            pkAuto.setColumnClassNameFirstCap("Thirdid");
-            pkAuto.setColumnSQLName("sqlthirdid");
-            pkAuto.setColumnSqlDataType("int");
-            pkAuto.setColumnClassDataType("Integer");
-            pkAuto.setColumnSqlDataTypeAllCap("INTEGER");
-            autoTable.setPkcolumn(pkAuto);
-
-            autoTable.setRadomInt(9222833);
-
             List<AutoTable> tables = new ArrayList<AutoTable>();
-            tables.add(autoTable);
+            for (int x=0;x<2;x++){
+                AutoTable autoTable = new AutoTable();
+                List<AutoColumn> basicColumns = new ArrayList<AutoColumn>();
+                for (int i=0;i<5;i++){
+                    AutoColumn nomalAuto = new AutoColumn();
+                    nomalAuto.setColumnAnnotation("表列名的注释" + i);
+                    nomalAuto.setColumnClassName("taTestNBA" + i);
+                    nomalAuto.setColumnClassNameFirstCap("TaTestNBA" + i);
+                    nomalAuto.setColumnClassDataType("String");
+                    nomalAuto.setColumnSqlDataTypeAllCap("VARCHAR");
+                    nomalAuto.setColumnSQLName("ta_Test_NBA"+i);
+                    nomalAuto.setColumnSqlDataType("varchar");
+                    basicColumns.add(nomalAuto);
+                }
+                autoTable.setBasicColumnList(basicColumns);
+
+                AutoColumn delAuto = new AutoColumn();
+                delAuto.setColumnAnnotation("逻辑删除标识");
+                delAuto.setColumnClassName("yn");
+                delAuto.setColumnClassNameFirstCap("Yn");
+                delAuto.setColumnClassDataType("Integer");
+                delAuto.setColumnSqlDataTypeAllCap("INTEGER");
+                delAuto.setColumnSQLName("yn");
+                delAuto.setColumnSqlDataType("int");
+                autoTable.setDeleteFlagColumn(delAuto);
+
+                autoTable.setTableAnnontation("第三次测试表");
+                autoTable.setTableClassNameFirstCap("ThirdTestBy"+x);
+                autoTable.setTableClassName("thirdTestBy"+x);
+
+                autoTable.setExtendsClassList(null);
+                AutoColumn pkAuto = new AutoColumn();
+                pkAuto.setColumnAnnotation("第三次主键注释");
+                pkAuto.setColumnClassName("thirdid");
+                pkAuto.setColumnClassNameFirstCap("Thirdid");
+                pkAuto.setColumnSQLName("sqlthirdid");
+                pkAuto.setColumnSqlDataType("int");
+                pkAuto.setColumnClassDataType("Integer");
+                pkAuto.setColumnSqlDataTypeAllCap("INTEGER");
+                autoTable.setPkcolumn(pkAuto);
+
+                autoTable.setRadomInt(9222833);
+                tables.add(autoTable);
+            }
+
             dbDomain.setTableList(tables);
             dbDomain.setPackagePath("com.auto");
             dbDomain.setProjMakeTime("2018/9/6 15:28");

@@ -52,7 +52,7 @@ public interface $!{tableClassNameFirstCap}Dao {
 
     /**
     * 查询$!{tableAnnontation}列表
-    * @param $!{tableClassName} $!{tableAnnontation}Domain
+    * @param query $!{tableAnnontation}Domain
     * @return $!{tableAnnontation}列表个数
     */
     public int selectCount($!{tableClassNameFirstCap} query) throws Exception;

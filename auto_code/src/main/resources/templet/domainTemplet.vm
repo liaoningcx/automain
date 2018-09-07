@@ -14,45 +14,45 @@ public class $!{tableClassNameFirstCap} implements Serializable {
     private static final long serialVersionUID = -$!{radomMathInt}L;
 
     /**
-     * 主键 $!{pkColumn.columnSQLComment}
+     * 主键 $!{pkColumn.columnAnnotation}
      */
-    private $!{pkColumn.columnClassType} $!{pkColumn.columnClassName};
+    private $!{pkColumn.columnClassDataType} $!{pkColumn.columnClassName};
 
     /**
-    * 逻辑删除标识 $!{deleteFlagColumn.columnSQLComment}
+    * 逻辑删除标识 $!{deleteFlagColumn.columnAnnotation}
     */
-    private $!{deleteFlagColumn.columnClassType} $!{deleteFlagColumn.columnClassName};
+    private $!{deleteFlagColumn.columnClassDataType} $!{deleteFlagColumn.columnClassName};
 
 #foreach(${basicColumn} in ${basicColumnList})
     /**
-    * $!{basicColumn.columnSQLComment}
+    * $!{basicColumn.columnAnnotation}
     */
-    private $!{basicColumn.columnClassType} $!{basicColumn.columnClassName};
+    private $!{basicColumn.columnClassDataType} $!{basicColumn.columnClassName};
 #end
 
 
-    public $!{pkColumn.columnClassType} get$!{pkColumn.columnClassNameFirstCap}() {
+    public $!{pkColumn.columnClassDataType} get$!{pkColumn.columnClassNameFirstCap}() {
         return $!{pkColumn.columnClassName};
     }
 
-    public void set$!{pkColumn.columnClassNameFirstCap}($!{pkColumn.columnClassType} $!{pkColumn.columnClassName}) {
+    public void set$!{pkColumn.columnClassNameFirstCap}($!{pkColumn.columnClassDataType} $!{pkColumn.columnClassName}) {
         this.$!{pkColumn.columnClassName} = $!{pkColumn.columnClassName};
     }
 
-    public $!{deleteFlagColumn.columnClassType} get$!{deleteFlagColumn.columnClassNameFirstCap}() {
+    public $!{deleteFlagColumn.columnClassDataType} get$!{deleteFlagColumn.columnClassNameFirstCap}() {
         return $!{deleteFlagColumn.columnClassName};
     }
 
-    public void set$!{deleteFlagColumn.columnClassNameFirstCap}($!{deleteFlagColumn.columnClassType} $!{deleteFlagColumn.columnClassName}) {
+    public void set$!{deleteFlagColumn.columnClassNameFirstCap}($!{deleteFlagColumn.columnClassDataType} $!{deleteFlagColumn.columnClassName}) {
         this.$!{deleteFlagColumn.columnClassName} = $!{deleteFlagColumn.columnClassName};
     }
 
 #foreach(${basicColumn} in ${basicColumnList})
-    public $!{basicColumn.columnClassType} get$!{basicColumn.columnClassNameFirstCap}() {
+    public $!{basicColumn.columnClassDataType} get$!{basicColumn.columnClassNameFirstCap}() {
         return $!{basicColumn.columnClassName};
     }
 
-    public void set$!{basicColumn.columnClassNameFirstCap}($!{basicColumn.columnClassType} $!{basicColumn.columnClassName}) {
+    public void set$!{basicColumn.columnClassNameFirstCap}($!{basicColumn.columnClassDataType} $!{basicColumn.columnClassName}) {
         this.$!{basicColumn.columnClassName} = $!{basicColumn.columnClassName};
     }
 #end
