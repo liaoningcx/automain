@@ -87,10 +87,10 @@ public class MicMsg {
                     autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassNameFirstCap")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
                 }
                 if("webvm".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassNameFirstCap")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
+                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassName")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
                 }
                 if("webjs".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+autoBeanVal.get("domainPropertyNameEN")+File.separator+autoBeanVal.get("domainPropertyNameEN")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
+                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+autoBeanVal.get("tableClassName")+File.separator+autoBeanVal.get("tableClassName")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
                 }
                 if("webinitvm".equals(templateFile.getFlag())){
                     autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
