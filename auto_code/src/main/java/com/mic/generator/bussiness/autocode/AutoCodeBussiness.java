@@ -50,7 +50,7 @@ public class AutoCodeBussiness {
     public static List<TemplateFile> getTemplateList() {
         List<TemplateFile> templateList = new ArrayList<TemplateFile>();
         String fileName = new AutoCodeBussiness().getClass().getResource("/").toString();
-        fileName = fileName.substring("file:/".length(), fileName.length())+ "//data//xml//template.xml";
+        fileName = fileName.substring("file:/".length(), fileName.length())+ "//data//xml//baseframe_template.xml";
         Document document =  Dom4jXMLUtil.read(fileName);
         List<Node> list = Dom4jXMLUtil.selectNodes(document,"//template");
         for(Node node : list){

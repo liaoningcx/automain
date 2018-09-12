@@ -20,10 +20,19 @@ public class TemplateFileUtil {
      * @param filePath 文件所在绝对路径
      * @return
      */
-    public static List<TemplateFile> getAutoBussinessTemplateFileListFromPath(String filePath){
-        String targetFile = filePath+ "//data//xml//template.xml";
+    public static List<TemplateFile> getAutoBaseframeTemplateFileListFromPath(String filePath){
+        String targetFile = filePath+ "//data//xml//baseframe_template.xml";
         return getAutoTemplateFileListByTargetFile(targetFile);
+    }
 
+    /**
+     * 获取业务模板
+     * @param filePath 文件所在绝对路径
+     * @return
+     */
+    public static List<TemplateFile> getAutoBussinessframeTemplateFileListFromPath(String filePath){
+        String targetFile = filePath+ "//data//xml//bussiness_template.xml";
+        return getAutoTemplateFileListByTargetFile(targetFile);
     }
 
     /**

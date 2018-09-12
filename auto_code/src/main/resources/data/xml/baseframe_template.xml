@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+
+    <!--基础springmvc框架-->
+    <template flag="frame" code="pomxmlTemplate" name="pom框架" templatePath="../../" templateName="pomxmlTemplate.vm" filePath="/" fileName="pom.xml"/>
+    <!--基础web服务启动文件 ：web.xml-->
+    <template flag="frame" code="webxmlTemplate" name="web启动" templatePath="/webapp/WEB-INF/" templateName="webxmlTemplate.vm" filePath="/" fileName="web.xml"/>
+
+    <!--mybatis配置文件-->
+    <template flag="frame" code="mybatisconfigTemplate" name="mybatis模板" templatePath="/resources/mybatis" templateName="mybatisConfigTemplate.vm" filePath="/" fileName="mybatis-config.xml"/>
+    <!--spring配置文件-->
+    <template flag="frame" code="springconfigTemplate" name="spring模板" templatePath="/resources/spring" templateName="springConfigTemplate.vm" filePath="/" fileName="spring-config.xml"/>
+    <template flag="frame" code="springConfigDaoTemplate" name="springDao模板" templatePath="/resources/spring" templateName="springConfigDaoTemplate.vm" filePath="/" fileName="spring-config-dao.xml"/>
+    <template flag="frame" code="springConfigDatasourceDbcpTemplate" name="springDBCP模板" templatePath="/resources/spring" templateName="springConfigDatasourceDbcpTemplate.vm" filePath="/" fileName="spring-config-datasource-dbcp.xml"/>
+    <template flag="frame" code="springConfigManagerTemplate" name="springManager模板" templatePath="/resources/spring" templateName="springConfigManagerTemplate.vm" filePath="/" fileName="spring-config-manager.xml"/>
+    <template flag="frame" code="springConfigServiceTemplate" name="springService模板" templatePath="/resources/spring" templateName="springConfigServiceTemplate.vm" filePath="/" fileName="spring-config-service.xml"/>
+    <template flag="frame" code="springConfigMVCTemplate" name="springMVC模板" templatePath="/resources/spring" templateName="springConfigMVCTemplate.vm" filePath="/" fileName="spring-config-mvc.xml"/>
+
+    <!--web初始端-->
+    <template flag="webinitvm" code="indexViewTemplate" name="indexViewTemplate模板" templatePath="/webapp/WEB-INF" templateName="indexViewTemplate.vm" filePath="/views" fileName="index.vm"/>
+
+
+</templates>

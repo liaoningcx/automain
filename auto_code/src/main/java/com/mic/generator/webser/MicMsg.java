@@ -56,77 +56,76 @@ public class MicMsg {
             //自动代码生成区的目录：   currentProjectPath + 自动代码生成区 + 自动项目的总文件夹
             String autoProjPath = currentProjectPath + "autoprojproduct" +File.separator +"autoProjWin";
 
-            //框架固定文件--如js等
-            FrameAutoUtil.AutoFrameMake(frameBasePath,autoProjPath);
-
-            AutoDBDomain autoDBDomain = JsonUtil.fromJsonByGoogle(value, new TypeToken<AutoDBDomain>() {
-            });
-            for (AutoTable eachAutoTable : autoDBDomain.getTableList()){
-
-            }
-
-            //获取值
-            HashMap<String,Object> autoBeanVal = _getAutoCodeName(value);
-            autoBeanVal.put("PROJECT_NAME","autoProjectVer1.0");//项目名称
-            //获取模板Liat
-            List<TemplateFile> templateFileList = TemplateFileUtil.getAutoBussinessTemplateFileListFromPath(currentProjectPath);
             //业务模板目录
             String templatePath = currentProjectPath + "templet";// 模板目录  file:/D:/dev_h/realDev/auto_code/target/classes/templet\
-            //mapper文件集合
+            //入参的数据信息
+            AutoDBDomain autoDBDomain = JsonUtil.fromJsonByGoogle(value, new TypeToken<AutoDBDomain>() {
+            });
+            //制作框架固定文件--如js等
+            FrameAutoUtil.AutoFrameMake(frameBasePath,autoProjPath);
+
+
+            //制作业务动态文件，--如spring配置文件中的扫描文件。eg：spring-config.xml
             List<String> mapperFileList = new ArrayList<String>();
-            for (TemplateFile templateFile : templateFileList){
-                if("mybatisconfigTemplate".equals(templateFile.getCode())){//需要收集信息，最后生成
-                    continue;
+            //遍历每个表，制作每个表的业务代码；eg：controller，service，dao，mapper等
+            List<TemplateFile> bussinessTemplateFileList = TemplateFileUtil.getAutoBussinessframeTemplateFileListFromPath(currentProjectPath);
+            for (AutoTable eachAutoTable : autoDBDomain.getTableList()){
+                HashMap<String,Object> bussinessTemplateAutoMapValue = _getBussinessTemplateAutoCodeName(autoDBDomain,eachAutoTable);
+                for (TemplateFile eachTemplateFile : bussinessTemplateFileList){
+                    String autoFileNamePath = autoProjPath+"/src/main/"+eachTemplateFile.getTemplatePath()+File.separator+eachTemplateFile.getFilePath()+File.separator+bussinessTemplateAutoMapValue.get("tableClassNameFirstCap")+eachTemplateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
+                    //检测文件是否存在
+                    File file = new File(autoFileNamePath);
+                    if (!file.exists()) {
+                        File filePath = new File(file.getParent());
+                        filePath.mkdirs();
+                    }
+                    VelocityUtil.generatorCode(templatePath, eachTemplateFile.getTemplateName(), bussinessTemplateAutoMapValue, autoFileNamePath);
+                    if("sqlMapperTemplet".equals(eachTemplateFile.getCode())){
+                        mapperFileList.add("mybatis"+File.separator+eachTemplateFile.getFilePath()+File.separator+bussinessTemplateAutoMapValue.get("tableClassNameFirstCap")+eachTemplateFile.getFileName());
+                    }
                 }
-                //各个模板对应的文件
-                String autoFileNamePath = "";
-                if ("frame".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+templateFile.getFileName();
-                }
-                if("bussiness".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassNameFirstCap")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
-                }
-                if("webvm".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassName")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
-                }
-                if("webjs".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+autoBeanVal.get("tableClassName")+File.separator+autoBeanVal.get("tableClassName")+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
-                }
-                if("webinitvm".equals(templateFile.getFlag())){
-                    autoFileNamePath = autoProjPath+"/src/main/"+templateFile.getTemplatePath()+File.separator+templateFile.getFilePath()+File.separator+templateFile.getFileName();//D:/dev_h/realDev/auto_code/target/classes/templet/aaa.vm
-                }
-                if ("".equals(autoFileNamePath)){
-                    System.out.println("自动生成文件为空，其模板文件为："+templateFile.getCode());
-                }
+            }
+
+            //制作基础框架动态文件，--如spring配置文件中的扫描文件。eg：spring-config.xml
+            //获取模板Liat
+            List<TemplateFile> baseTemplateFileList = TemplateFileUtil.getAutoBaseframeTemplateFileListFromPath(currentProjectPath);
+            HashMap<String,Object> autoBaseFrameVal = _getBaseTemplateAutoCodeName(autoDBDomain);
+            //根据业务产生的sql文件，对应给mybatis的自动生成
+            autoBaseFrameVal.put("sqlMapperFileList",mapperFileList);
+            for (TemplateFile eachBaseTemplateFile : baseTemplateFileList){
+                String autoFileNamePath = autoProjPath+"/src/main/"+eachBaseTemplateFile.getTemplatePath()+File.separator+eachBaseTemplateFile.getFilePath()+File.separator+eachBaseTemplateFile.getFileName();
+                //检测文件是否存在
                 File file = new File(autoFileNamePath);
                 if (!file.exists()) {
                     File filePath = new File(file.getParent());
                     filePath.mkdirs();
                 }
-                //解析并创建文件    templatePath:d:/dev/src/aaa/     templateFile.getTemplateName():daoImplTemplate.vm
-                VelocityUtil.generatorCode(templatePath, templateFile.getTemplateName(), autoBeanVal, autoFileNamePath);
-                if("sqlMapperTemplet".equals(templateFile.getCode())){
-                    mapperFileList.add("mybatis"+File.separator+templateFile.getFilePath()+File.separator+autoBeanVal.get("tableClassNameFirstCap")+templateFile.getFileName());
-                }
+                VelocityUtil.generatorCode(templatePath, eachBaseTemplateFile.getTemplateName(), autoBaseFrameVal, autoFileNamePath);
             }
-
-            //根据业务产生的sql文件，对应给mybatis的自动生成
-            autoBeanVal.put("sqlMapperFileList",mapperFileList);
-            VelocityUtil.generatorCode(templatePath,"mybatisConfigTemplate.vm", autoBeanVal, autoProjPath+"/src/main/resources/mybatis"+File.separator+"mybatis-config.xml");
-
+            VelocityUtil.generatorCode(templatePath,"mybatisConfigTemplate.vm", autoBaseFrameVal, autoProjPath+"/src/main/resources/mybatis"+File.separator+"mybatis-config.xml");
         }catch (Exception ex){
             ex.printStackTrace();
         }
         return null;
     }
 
-    private HashMap<String, Object> _getAutoCodeName(String val) {
+    private HashMap<String, Object> _getBaseTemplateAutoCodeName(AutoDBDomain autoDBDomain) {
         HashMap<String, Object> mapval = new HashMap<String, Object>();
 
-        AutoDBDomain autoDBDomain = JsonUtil.fromJsonByGoogle(val, new TypeToken<AutoDBDomain>() {
-        });
+        //基本框架 -- dao，impl，service，impl
+        mapval.put("packagePath", autoDBDomain.getPackagePath());//包名基础路径，不带dao、service、manager这类的包名，在他们的上一级；
 
-        AutoTable autoTable = autoDBDomain.getTableList().get(0);
+        return mapval;
+    }
+
+    /**
+     * 获取业务部分的mapvalue信息
+     * @param autoDBDomain
+     * @param autoTable
+     * @return
+     */
+    private HashMap<String, Object> _getBussinessTemplateAutoCodeName(AutoDBDomain autoDBDomain ,AutoTable autoTable) {
+        HashMap<String, Object> mapval = new HashMap<String, Object>();
 
         //基本框架 -- dao，impl，service，impl
         mapval.put("packagePath", autoDBDomain.getPackagePath());//包名基础路径，不带dao、service、manager这类的包名，在他们的上一级；
@@ -148,85 +147,15 @@ public class MicMsg {
         return mapval;
     }
 
-
-    private String _getRequestValue(String value){
-        try {
-            Gson gson=new Gson();
-            //gson
-            Type type = new TypeToken<Collection<TableInfo>>(){}.getType();
-            Collection<TableInfo> tableInfos = gson.fromJson(value,type);
-            for(TableInfo each:tableInfos){
-//                AutoMakeCodeBussiness.makeCodeByTable(each);
-            }
-        }catch (Exception ex){
-            logger.error("MicMsg",ex);
-        }
-        return null;
-    }
-
-    public static void main(String args [] ){
-        try {
-            AutoDBDomain dbDomain = new AutoDBDomain();
-            dbDomain.setAuthorName("大胖子");
-            List<AutoTable> tables = new ArrayList<AutoTable>();
-            for (int x=0;x<2;x++){
-                AutoTable autoTable = new AutoTable();
-                List<AutoColumn> basicColumns = new ArrayList<AutoColumn>();
-                for (int i=0;i<5;i++){
-                    AutoColumn nomalAuto = new AutoColumn();
-                    nomalAuto.setColumnAnnotation("表列名的注释" + i);
-                    nomalAuto.setColumnClassName("taTestNBA" + i);
-                    nomalAuto.setColumnClassNameFirstCap("TaTestNBA" + i);
-                    nomalAuto.setColumnClassDataType("String");
-                    nomalAuto.setColumnSqlDataTypeAllCap("VARCHAR");
-                    nomalAuto.setColumnSQLName("ta_Test_NBA"+i);
-                    nomalAuto.setColumnSqlDataType("varchar");
-                    basicColumns.add(nomalAuto);
-                }
-                autoTable.setBasicColumnList(basicColumns);
-
-                AutoColumn delAuto = new AutoColumn();
-                delAuto.setColumnAnnotation("逻辑删除标识");
-                delAuto.setColumnClassName("yn");
-                delAuto.setColumnClassNameFirstCap("Yn");
-                delAuto.setColumnClassDataType("Integer");
-                delAuto.setColumnSqlDataTypeAllCap("INTEGER");
-                delAuto.setColumnSQLName("yn");
-                delAuto.setColumnSqlDataType("int");
-                autoTable.setDeleteFlagColumn(delAuto);
-
-                autoTable.setTableAnnontation("第三次测试表");
-                autoTable.setTableClassNameFirstCap("ThirdTestBy"+x);
-                autoTable.setTableClassName("thirdTestBy"+x);
-
-                autoTable.setExtendsClassList(null);
-                AutoColumn pkAuto = new AutoColumn();
-                pkAuto.setColumnAnnotation("第三次主键注释");
-                pkAuto.setColumnClassName("thirdid");
-                pkAuto.setColumnClassNameFirstCap("Thirdid");
-                pkAuto.setColumnSQLName("sqlthirdid");
-                pkAuto.setColumnSqlDataType("int");
-                pkAuto.setColumnClassDataType("Integer");
-                pkAuto.setColumnSqlDataTypeAllCap("INTEGER");
-                autoTable.setPkcolumn(pkAuto);
-
-                autoTable.setRadomInt(9222833);
-                tables.add(autoTable);
-            }
-
-            dbDomain.setTableList(tables);
-            dbDomain.setPackagePath("com.auto");
-            dbDomain.setProjMakeTime("2018/9/6 15:28");
-            String val = JsonUtil.toJson(dbDomain);
-            System.out.println("解析的报文为："+val);
-            ResponseEntity entity = new MicMsg().testWebSer2(null, val);
-
-            System.out.println(entity);
-            System.out.println("————END————");
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
-
+    /**
+     * 获取业务部分的mapvalue信息
+     * @param autoDBDomain
+     * @param tableIndex
+     * @return
+     */
+    private HashMap<String, Object> _getBussinessTemplateAutoCodeName(AutoDBDomain autoDBDomain ,int tableIndex) {
+        AutoTable autoTable = autoDBDomain.getTableList().get(tableIndex);
+        return _getBussinessTemplateAutoCodeName(autoDBDomain,autoTable);
     }
 
 }

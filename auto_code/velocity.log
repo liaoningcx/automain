@@ -1,456 +1,307 @@
-2018-09-07 14:06:20,976 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:06:20,977 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:06:20,978 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:06:20,978 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:06:20,978 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:06:20,978 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:06:20,978 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:06:20,978 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:06:20,978 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:06:20,978 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:06:20,978 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:06:20,978 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:06:20,978 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:06:20,981 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,984 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,986 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,989 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,990 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,992 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:06:20,993 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,351 - Log4JLogChute initialized using file 'velocity.log'
-2018-09-07 14:20:12,352 - Initializing Velocity, Calling init()...
-2018-09-07 14:20:12,352 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2018-09-07 14:20:12,352 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
-2018-09-07 14:20:12,352 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2018-09-07 14:20:12,352 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2018-09-07 14:20:12,352 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 14:20:12,352 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 14:20:12,356 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,358 - Do unicode file recognition:  false
-2018-09-07 14:20:12,358 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
-2018-09-07 14:20:12,401 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2018-09-07 14:20:12,403 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2018-09-07 14:20:12,404 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2018-09-07 14:20:12,404 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2018-09-07 14:20:12,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2018-09-07 14:20:12,405 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2018-09-07 14:20:12,406 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2018-09-07 14:20:12,408 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2018-09-07 14:20:12,409 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2018-09-07 14:20:12,409 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2018-09-07 14:20:12,431 - Created '20' parsers.
-2018-09-07 14:20:12,437 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2018-09-07 14:20:12,437 - Velocimacro : Default library not found.
-2018-09-07 14:20:12,437 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2018-09-07 14:20:12,437 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2018-09-07 14:20:12,437 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2018-09-07 14:20:12,437 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2018-09-07 14:20:12,459 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 14:20:12,468 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 14:20:12,469 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 14:20:12,470 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 14:20:12,470 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 14:20:12,470 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 14:20:12,470 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 14:20:12,470 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 14:20:12,471 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 14:20:12,472 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 14:20:12,472 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 14:20:12,475 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,478 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,503 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,506 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,513 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,516 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,517 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,517 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,525 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,533 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,533 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
-2018-09-07 14:20:12,533 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
-2018-09-07 14:20:12,533 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
-2018-09-07 14:20:12,533 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
-2018-09-07 14:20:12,534 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,534 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,535 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,539 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,539 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:20:12,540 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:20:12,540 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:20:12,540 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:20:12,541 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:20:12,541 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:20:12,541 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:20:12,541 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:20:12,541 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:20:12,541 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:20:12,541 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:20:12,541 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:20:12,541 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 14:20:12,541 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 14:20:12,541 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 14:20:12,543 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,545 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,547 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,549 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,567 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,569 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 14:20:12,570 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,414 - Log4JLogChute initialized using file 'velocity.log'
-2018-09-07 16:09:12,415 - Initializing Velocity, Calling init()...
-2018-09-07 16:09:12,415 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2018-09-07 16:09:12,415 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
-2018-09-07 16:09:12,415 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2018-09-07 16:09:12,415 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2018-09-07 16:09:12,415 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:09:12,415 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:09:12,418 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,419 - Do unicode file recognition:  false
-2018-09-07 16:09:12,419 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
-2018-09-07 16:09:12,429 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2018-09-07 16:09:12,430 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2018-09-07 16:09:12,431 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2018-09-07 16:09:12,431 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2018-09-07 16:09:12,432 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2018-09-07 16:09:12,432 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2018-09-07 16:09:12,433 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2018-09-07 16:09:12,434 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2018-09-07 16:09:12,434 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2018-09-07 16:09:12,435 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2018-09-07 16:09:12,455 - Created '20' parsers.
-2018-09-07 16:09:12,458 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2018-09-07 16:09:12,458 - Velocimacro : Default library not found.
-2018-09-07 16:09:12,458 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2018-09-07 16:09:12,458 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2018-09-07 16:09:12,458 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2018-09-07 16:09:12,458 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2018-09-07 16:09:12,482 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:09:12,490 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:09:12,491 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:09:12,492 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:09:12,493 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:09:12,493 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:09:12,493 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:09:12,493 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:09:12,493 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:09:12,503 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,505 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,508 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,511 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,517 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,519 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,520 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,520 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,531 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,531 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,532 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
-2018-09-07 16:09:12,532 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
-2018-09-07 16:09:12,532 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
-2018-09-07 16:09:12,532 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
-2018-09-07 16:09:12,532 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,533 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,534 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,538 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,538 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:09:12,538 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:09:12,539 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:09:12,539 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:09:12,540 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:09:12,540 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:09:12,540 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:09:12,540 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:09:12,540 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:09:12,540 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:09:12,540 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:09:12,540 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:09:12,540 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:09:12,540 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:09:12,540 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:09:12,542 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,543 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,545 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,547 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,548 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,549 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:09:12,550 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:41,938 - Log4JLogChute initialized using file 'velocity.log'
-2018-09-07 16:10:41,939 - Initializing Velocity, Calling init()...
-2018-09-07 16:10:41,939 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2018-09-07 16:10:41,939 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
-2018-09-07 16:10:41,939 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2018-09-07 16:10:41,939 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2018-09-07 16:10:41,939 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:10:41,939 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:10:41,950 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:41,951 - Do unicode file recognition:  false
-2018-09-07 16:10:41,951 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
-2018-09-07 16:10:41,959 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2018-09-07 16:10:41,960 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2018-09-07 16:10:41,960 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2018-09-07 16:10:41,961 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2018-09-07 16:10:41,961 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2018-09-07 16:10:41,962 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2018-09-07 16:10:41,962 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2018-09-07 16:10:41,963 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2018-09-07 16:10:41,964 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2018-09-07 16:10:41,965 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2018-09-07 16:10:41,986 - Created '20' parsers.
-2018-09-07 16:10:41,992 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2018-09-07 16:10:41,992 - Velocimacro : Default library not found.
-2018-09-07 16:10:41,992 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2018-09-07 16:10:41,992 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2018-09-07 16:10:41,992 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2018-09-07 16:10:41,992 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2018-09-07 16:10:42,014 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,023 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:10:42,024 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:10:42,025 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:10:42,026 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:10:42,028 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,033 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,037 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,041 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,048 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,052 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,053 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,054 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,055 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,056 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,056 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
-2018-09-07 16:10:42,056 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
-2018-09-07 16:10:42,056 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
-2018-09-07 16:10:42,056 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
-2018-09-07 16:10:42,058 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,058 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,059 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,064 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,064 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:10:42,064 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:10:42,065 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:10:42,066 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:10:42,066 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:10:42,066 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:10:42,066 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:10:42,066 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:10:42,066 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:10:42,067 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:10:42,067 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:10:42,067 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:10:42,067 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:10:42,067 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:10:42,067 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:10:42,068 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,070 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,072 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,074 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,075 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,077 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:10:42,078 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,062 - Log4JLogChute initialized using file 'velocity.log'
-2018-09-07 16:15:56,062 - Initializing Velocity, Calling init()...
-2018-09-07 16:15:56,062 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
-2018-09-07 16:15:56,062 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
-2018-09-07 16:15:56,062 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
-2018-09-07 16:15:56,062 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
-2018-09-07 16:15:56,062 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:15:56,062 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
-2018-09-07 16:15:56,073 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,073 - Do unicode file recognition:  false
-2018-09-07 16:15:56,073 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
-2018-09-07 16:15:56,081 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
-2018-09-07 16:15:56,082 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
-2018-09-07 16:15:56,083 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
-2018-09-07 16:15:56,084 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
-2018-09-07 16:15:56,084 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
-2018-09-07 16:15:56,084 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-2018-09-07 16:15:56,085 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-2018-09-07 16:15:56,086 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-2018-09-07 16:15:56,087 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
-2018-09-07 16:15:56,087 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-2018-09-07 16:15:56,107 - Created '20' parsers.
-2018-09-07 16:15:56,111 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
-2018-09-07 16:15:56,111 - Velocimacro : Default library not found.
-2018-09-07 16:15:56,111 - Velocimacro : allowInline = true : VMs can be defined inline in templates
-2018-09-07 16:15:56,111 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-2018-09-07 16:15:56,111 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
-2018-09-07 16:15:56,111 - Velocimacro : autoload off : VM system will not automatically reload global library macros
-2018-09-07 16:15:56,134 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,141 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:15:56,141 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:15:56,141 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:15:56,141 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
-2018-09-07 16:15:56,142 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
-2018-09-07 16:15:56,147 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:15:56,147 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:15:56,148 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:15:56,149 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:15:56,149 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:15:56,149 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
-2018-09-07 16:15:56,149 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
-2018-09-07 16:15:56,154 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,157 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,161 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,164 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,182 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,184 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,185 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,186 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,187 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,188 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,188 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
-2018-09-07 16:15:56,188 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
-2018-09-07 16:15:56,188 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
-2018-09-07 16:15:56,188 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
-2018-09-07 16:15:56,189 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,190 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,191 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,195 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,195 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:15:56,195 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:15:56,196 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:15:56,196 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:15:56,197 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:15:56,197 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:15:56,197 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:15:56,197 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:15:56,197 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:15:56,197 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:15:56,197 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:15:56,197 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:15:56,197 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
-2018-09-07 16:15:56,197 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
-2018-09-07 16:15:56,197 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
-2018-09-07 16:15:56,199 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,207 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,209 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,211 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,219 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,221 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-2018-09-07 16:15:56,222 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,110 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-11 11:11:15,111 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-11 11:11:15,111 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-11 11:11:15,111 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-11 11:11:15,112 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-11 11:11:15,112 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-11 11:11:15,112 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-11 11:11:15,112 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-11 11:11:15,113 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-11 11:11:15,113 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-11 11:11:15,113 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-11 11:11:15,113 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-11 11:11:15,116 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-11 11:11:15,117 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-11 11:11:15,117 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-11 11:11:15,117 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-11 11:11:15,119 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-11 11:11:15,120 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-11 11:11:15,120 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-11 11:11:15,131 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,140 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,148 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,151 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,158 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,160 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,161 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,162 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,162 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,163 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,164 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
+2018-09-11 11:11:15,164 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
+2018-09-11 11:11:15,164 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
+2018-09-11 11:11:15,164 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
+2018-09-11 11:11:15,164 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,165 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,166 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,171 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,171 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-11 11:11:15,171 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-11 11:11:15,172 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-11 11:11:15,172 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-11 11:11:15,172 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-11 11:11:15,172 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-11 11:11:15,172 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-11 11:11:15,172 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-11 11:11:15,172 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-11 11:11:15,172 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-11 11:11:15,172 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-11 11:11:15,172 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-11 11:11:15,173 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-11 11:11:15,173 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-11 11:11:15,173 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-11 11:11:15,174 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,176 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,178 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,179 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,193 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,199 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-11 11:11:15,200 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 14:07:28,622 - Log4JLogChute initialized using file 'velocity.log'
+2018-09-12 14:07:28,623 - Initializing Velocity, Calling init()...
+2018-09-12 14:07:28,623 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2018-09-12 14:07:28,623 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2018-09-12 14:07:28,623 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-09-12 14:07:28,623 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2018-09-12 14:07:28,623 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 14:07:28,623 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 14:07:28,628 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 14:07:28,629 - Do unicode file recognition:  false
+2018-09-12 14:07:28,629 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
+2018-09-12 14:07:28,639 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2018-09-12 14:07:28,640 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2018-09-12 14:07:28,641 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2018-09-12 14:07:28,643 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2018-09-12 14:07:28,643 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2018-09-12 14:07:28,644 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-09-12 14:07:28,645 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-09-12 14:07:28,646 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-09-12 14:07:28,648 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-09-12 14:07:28,649 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-09-12 14:07:28,673 - Created '20' parsers.
+2018-09-12 14:07:28,678 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-09-12 14:07:28,678 - Velocimacro : Default library not found.
+2018-09-12 14:07:28,678 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-09-12 14:07:28,678 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-09-12 14:07:28,678 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-09-12 14:07:28,678 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-09-12 14:07:28,702 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:15:51,147 - Log4JLogChute initialized using file 'velocity.log'
+2018-09-12 15:15:51,147 - Initializing Velocity, Calling init()...
+2018-09-12 15:15:51,147 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2018-09-12 15:15:51,148 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2018-09-12 15:15:51,148 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-09-12 15:15:51,148 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2018-09-12 15:15:51,148 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 15:15:51,148 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 15:15:51,151 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:15:51,152 - Do unicode file recognition:  false
+2018-09-12 15:15:51,152 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
+2018-09-12 15:15:51,159 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2018-09-12 15:15:51,160 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2018-09-12 15:15:51,161 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2018-09-12 15:15:51,161 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2018-09-12 15:15:51,162 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2018-09-12 15:15:51,162 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-09-12 15:15:51,163 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-09-12 15:15:51,164 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-09-12 15:15:51,165 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-09-12 15:15:51,165 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-09-12 15:15:51,184 - Created '20' parsers.
+2018-09-12 15:15:51,188 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-09-12 15:15:51,188 - Velocimacro : Default library not found.
+2018-09-12 15:15:51,188 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-09-12 15:15:51,188 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-09-12 15:15:51,188 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-09-12 15:15:51,188 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-09-12 15:15:51,208 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,014 - Log4JLogChute initialized using file 'velocity.log'
+2018-09-12 15:21:07,014 - Initializing Velocity, Calling init()...
+2018-09-12 15:21:07,014 - Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+2018-09-12 15:21:07,014 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2018-09-12 15:21:07,014 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2018-09-12 15:21:07,014 - Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+2018-09-12 15:21:07,014 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 15:21:07,014 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2018-09-12 15:21:07,017 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,018 - Do unicode file recognition:  false
+2018-09-12 15:21:07,018 - FileResourceLoader : adding path 'D:/dev_git/automain/auto_code/target/classes/templet'
+2018-09-12 15:21:07,025 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+2018-09-12 15:21:07,026 - Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+2018-09-12 15:21:07,027 - Loaded System Directive: org.apache.velocity.runtime.directive.Define
+2018-09-12 15:21:07,028 - Loaded System Directive: org.apache.velocity.runtime.directive.Break
+2018-09-12 15:21:07,028 - Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+2018-09-12 15:21:07,029 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2018-09-12 15:21:07,029 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2018-09-12 15:21:07,030 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2018-09-12 15:21:07,031 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2018-09-12 15:21:07,031 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2018-09-12 15:21:07,049 - Created '20' parsers.
+2018-09-12 15:21:07,053 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2018-09-12 15:21:07,053 - Velocimacro : Default library not found.
+2018-09-12 15:21:07,053 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2018-09-12 15:21:07,053 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2018-09-12 15:21:07,053 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2018-09-12 15:21:07,053 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2018-09-12 15:21:07,075 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,082 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,082 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,082 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,083 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,083 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,083 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,083 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,083 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,084 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,085 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,086 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,089 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,091 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,094 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,098 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,104 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,109 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,110 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,111 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,111 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,112 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,112 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,112 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,112 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,112 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,112 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,112 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,112 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,112 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,112 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,112 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,112 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,115 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,116 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,118 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,120 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,121 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,134 - ResourceManager : found sqlMapperTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 50]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 104]
+2018-09-12 15:21:07,135 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 37, column 155]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnSQLJDBCTypeAllCap}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 41, column 54]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 105, column 33]
+2018-09-12 15:21:07,136 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 109, column 37]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 135, column 49]
+2018-09-12 15:21:07,137 - Left side ($!{basicColumn.columnType}) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. sqlMapperTemplet.vm[line 139, column 53]
+2018-09-12 15:21:07,139 - ResourceManager : found daoTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,141 - ResourceManager : found serviceTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,143 - ResourceManager : found serviceImplTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,146 - ResourceManager : found domainTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,150 - ResourceManager : found controllerTemplet.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,152 - ResourceManager : found modelShowViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,152 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,152 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,152 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,152 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,152 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,152 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,152 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,152 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,152 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,152 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,152 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,152 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,152 - Left side ($i) of '==' operation has null value. If it is a reference, it may not be in the context or its toString() returned null. modelShowViewTemplate.vm[line 22, column 33]
+2018-09-12 15:21:07,152 - Left side of math operation ($i) has a null value. modelShowViewTemplate.vm[line 29, column 36]
+2018-09-12 15:21:07,152 - RHS of #set statement is null. Context will not be modified. modelShowViewTemplate.vm[line 29, column 25]
+2018-09-12 15:21:07,153 - ResourceManager : found modelViewInsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,155 - ResourceManager : found modelViewModTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,156 - ResourceManager : found modelShowViewJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,157 - ResourceManager : found modelViewInsJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:07,158 - ResourceManager : found modelViewModJsTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,677 - ResourceManager : found pomxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,680 - ResourceManager : found webxmlTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,682 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,684 - ResourceManager : found springConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,686 - ResourceManager : found springConfigDaoTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,689 - ResourceManager : found springConfigDatasourceDbcpTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,689 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 9, column 49] : ${code-micmsg.jdbc.driver} cannot be resolved.
+2018-09-12 15:21:11,690 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 10, column 37] : ${code-micmsg.jdbc.url} cannot be resolved.
+2018-09-12 15:21:11,690 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 11, column 42] : ${code-micmsg.jdbc.username} cannot be resolved.
+2018-09-12 15:21:11,690 - Null reference [template 'springConfigDatasourceDbcpTemplate.vm', line 12, column 42] : ${code-micmsg.jdbc.password} cannot be resolved.
+2018-09-12 15:21:11,691 - ResourceManager : found springConfigManagerTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,693 - ResourceManager : found springConfigServiceTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,695 - ResourceManager : found springConfigMVCTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:11,696 - ResourceManager : found indexViewTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2018-09-12 15:21:15,257 - ResourceManager : found mybatisConfigTemplate.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader

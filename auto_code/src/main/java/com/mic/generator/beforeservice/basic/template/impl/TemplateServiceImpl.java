@@ -28,7 +28,7 @@ public class TemplateServiceImpl implements TemplateService {
      */
     public List<TemplateFile> query(TemplateFile template){
 //        String fileName = this.getClass().getResource("/").toString();
-//        fileName = fileName.substring("file:/".length(), fileName.length())+ "//data//xml//template.xml";
+//        fileName = fileName.substring("file:/".length(), fileName.length())+ "//data//xml//baseframe_template.xml";
 //        Dom4jUtil dom4jUtil = new Dom4jUtil();
 //        Document document =  dom4jUtil.read(fileName);
 //        List<Node> list = dom4jUtil.selectNodes(document,"//template");
